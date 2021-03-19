@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <script src="Actividad 3.js" charset="utf-8"></script>
+    <style>
+        body{
+            background: url(fondo.jpg);
+            color: black;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Datos Personales</h1>
+        <hr size="4" color="b"></hrsize>
+        <br>
+        <table border="5"> 
+            <tbody>  
+                    <td>Cédula</td>
+                    <td>
+                        <input type="text"  name="ced" id="ced" placeholder="Cédula" >
+                    </td>
+                </tr>             
+                    <td>Nombres</td>
+                    <td>
+                        <input type="text"  name="nom" id="nom" placeholder="Nombres" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apellidos</td>
+                    <td>
+                        <input type="text"  name="ape" id="ape"placeholder="Apellidos" >
+                    </td>
+                </tr>               
+                <tr>
+                    <td>Edad</td>
+                    <td>
+                        <input type="text"  name="eda" id="eda" placeholder="Edad" >
+                    </td>
+                </tr>
+            </tbody>
+            <table border="5">
+                <br>
+                <tr>
+                    <td>
+                         <button onclick="guardar()">GUARDAR</button>
+                    </td>
+                </tr>
+            </table>
+        </table>
+        <br>
+        <h2>Listado de Datos</h2>
+        <table border="5">
+            <th>Cédula</th> <th>Nombres</th> <th>Apellidos</th> <th>Edad</th> <tbody id="cuerpo"> </tbody>
+        </table>
+        
+            <div id="salida"></div>
+        <br>
+        <div>
+        <table border="5">
+            <th>Campo a modificar</th> 
+        <th>   <select id="tipo">
+                <option value="1">Cédula</option> 
+                <option value="2">Nombres</option>
+                <option value="3">Apellidos</option>
+                <option value="4">Edad</option>
+            </select>
+        </th>
+            <th>Nuevo Nombre</th>
+                <td><input type="text" id="can" name="can" placeholder="Nuevo Nombre"></td>
+            <td><button onclick="remplazar()">MODIFICAR</button></td>
+        </table>
+            <div id="resultado"></div>
+    </center>
+    <script src="Actividad 3.js" charset="utf-8"></script>
+</body>
+</html>

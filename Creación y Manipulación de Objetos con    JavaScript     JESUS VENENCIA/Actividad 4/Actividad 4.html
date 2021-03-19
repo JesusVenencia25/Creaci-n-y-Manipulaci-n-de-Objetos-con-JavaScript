@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+    <script src="Actividad 4.js" charset="utf-8"></script>
+    <style>
+        body{
+            background: url(fondo.jpg);
+            color: black;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+        <center>
+        <h1>Venta</h1>
+        <hr size="4" color="b"></hrsize>
+        <br>
+        <form action="index.html" method="post">
+            <table border="5">
+                <tr>
+                    <td><label for="">Articulo</label></td>
+                    <td> <input id="form_articulo" type="text" name="form_articulo" value="" autofocus></td>
+                </tr>
+                <tr>
+                    <td><label for="">Precio de Venta</label></td>
+                    <td><input id="form_precio" type="number" name="form_precio" value=""></td>
+                </tr>
+                <tr>
+                <td><label for="">Cantidad</label></td>
+                <td><input id="form_cantidad" type="number" name="form_cantidad" value=""></td>
+                </tr>
+            </table>
+            <table border="5">
+                <br>
+                    <td colspan="2">
+                        <button type="button" name="button" onclick="agregar_producto()">GUARDAR</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+              <h2>Salida</h2>
+        <table border="5">
+            <thead>
+                <tr>
+                <th>Articulo</th> <th>Precio de Venta</th> <th>Cantidad</th> <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tabla_productos">
+
+            </tbody>
+        </table>
+        <table>
+            <tfoot>
+                <tr>
+                    <th>Gran Total</th>
+                <th id="total"></th>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+    <script src="Actividad 4.js" charset="utf-8"></script>
+</body>
+</html>
+        
